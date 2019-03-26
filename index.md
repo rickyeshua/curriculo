@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
 
-You can use the [editor on GitHub](https://github.com/rickyeshua/curriculo/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
 
-### Markdown
+h2 {
+    margin-top: 1.3em;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+a {
+    color: #0083e8;
+}
 
-```markdown
-Syntax highlighted code block
+b, strong {
+    font-weight: 600;
+}
 
-# Header 1
-## Header 2
-### Header 3
+samp {
+    display: none;
+}
 
-- Bulleted
-- List
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rickyeshua/curriculo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
